@@ -1,0 +1,45 @@
+// FONT
+$remInit: 10px;
+$baseFontSize: 1.6rem;
+
+$mainAngle: 45deg;
+$mainAngleInvert: -45deg;
+
+$fontSizeH1:5rem;
+$fontSizeH2:3.4rem;
+$fontSizeH3:2rem;
+$fontSizeH4:1.8rem;
+
+// COLOR
+$mainColor: white ;
+$mainDarker: darken($mainColor, 15%);
+$mainLighter: lighten($mainColor, 15%);
+
+$grisClair:#9d9e9e;
+$grisMoyen:#808080;
+$grisFonce:#666666;
+
+$bleu: #8ABDC1;
+$bleuFonce: #669933;
+
+$bodyBg:#ffffff;
+
+$titreColor:#009FE3;
+
+$menuItem:#ffffff;
+$menuItemHover:#ffffff;
+
+$footerColor:#666666;
+
+// SHADOW
+$boxShadowH1:0px 0px 7px rgba(0,0,0,0.35);
+$boxShadowHeader:0px 11px 18px -8px rgba(0,0,0,0.1);
+
+// DEFAULT
+$defaultShadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+$resetShadow: 0 0 0 0 rgba(0, 0, 0, 0);
+$defaultTransition: opacity 0.5s;
+
+$mainFont: 'Open Sans', Helvetica, sans-serif;
+$titleFont: 'Playfair Display', serif;
+$bodyBackground: white;
