@@ -13,6 +13,11 @@
 	position: relative;
 	display: block;
 }
+@mixin inline-block()
+{
+	position: relative;
+	display: inline-block;
+}
 @mixin absolute-block()
 {
 	position: absolute;

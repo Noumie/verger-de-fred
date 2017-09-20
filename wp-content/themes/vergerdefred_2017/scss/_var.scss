@@ -1,6 +1,6 @@
 // FONT
 $remInit: 10px;
-$baseFontSize: 1.6rem;
+$baseFontSize: 1.5rem;
 
 $mainAngle: 45deg;
 $mainAngleInvert: -45deg;
@@ -16,15 +16,15 @@ $mainDarker: darken($mainColor, 15%);
 $mainLighter: lighten($mainColor, 15%);
 
 $grisClair:#9d9e9e;
-$grisMoyen:#808080;
+$grisMoyen:#979797;
 $grisFonce:#666666;
 
 $bleu: #8ABDC1;
-$bleuFonce: #669933;
+$bleuFonce: #1088A0;
 
 $bodyBg:#ffffff;
 
-$titreColor:#009FE3;
+$titreColor:$bleuFonce;
 
 $menuItem:#ffffff;
 $menuItemHover:#ffffff;

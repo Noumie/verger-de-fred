@@ -1,0 +1,129 @@
+.presentation {
+	position: relative;
+	display: block;
+	height: 70vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.overlay {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.4)
+	}
+	%title {
+		position: absolute;
+		bottom: 6rem;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		color: #ffffff;
+		font-family: $titleFont;
+		font-size: 8rem;
+		line-height: 7rem;
+		text-shadow: 0.1rem 0.1rem 0.2rem #555;
+		span {
+			display: block;
+			font-size: 5rem;
+		}
+	}
+}
+
+div.entry-content-home{
+	@include container();
+	max-width: inherit;
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
+.separator {
+	position: absolute;
+	display: block;
+	width: 26rem;
+	height: auto;
+	bottom: -6rem;
+	right: 0;
+	z-index: 4;
+}
+.zone-picto {
+	background-image: url("../img/fond-picto.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	li {
+		@include inline-block;
+		width: 24.7%;
+		vertical-align: top;
+		span {
+			@include block;
+			padding: 1rem 1.5rem;
+			width: 72%;
+			margin: 2rem auto 0;
+			text-align: center;
+			color: white;
+			border: 0.1rem solid white;
+		}
+	}
+}
+.zone-photo {
+	padding: 0;
+	ul {
+		margin: 0;
+		li {
+			@include inline-block;
+			width: 19.8%;
+		}
+	}
+}
+
+.zone-texte {
+	background-image: url("../img/tourisme-charente-maritime.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	.part-1 {
+		padding-right: 4rem;
+	}
+	.part-2 {
+		padding-left: 4rem;
+		&:before, &:after {
+			content:" ";
+			display: block;
+			position: absolute;
+			top: -2rem;
+			left: 4rem;
+			height: 0.4rem;
+			width: 9rem;
+			background-color: $bleu;
+		}
+	}
+}
+
+.zone-texte-2 {
+	background-image: url("../img/branche-feuilles.png");
+	background-size: contain;
+	background-position: left top;
+	background-repeat: no-repeat;
+	.part-1 {
+		padding-left: 4rem;
+	}
+	.part-2 {
+		padding-right: 4rem;
+		&:before, &:after {
+			content:" ";
+			display: block;
+			position: absolute;
+			top: -2rem;
+			left: 0;
+			height: 0.4rem;
+			width: 9rem;
+			background-color: $bleu;
+		}
+	}
+}
+.part-1, .part-2 {
+	@include inline-block;
+	width: 49.5%;
+	vertical-align: middle;
+}

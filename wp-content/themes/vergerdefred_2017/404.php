@@ -14,11 +14,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'vergerdefred_2017' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oups! Page introubale.', 'vergerdefred_2017' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'Il semblerait que la page demandée n est plus disponible ou n existe pas. Essayer une autre recherche ?', 'vergerdefred_2017' ); ?></p>
+					<p><?php esc_html_e( 'Oups! Page introubale. La page que vous recherchez n’est pas accessible pour le moment. Il se peut que le lien que vous avez utilisé soit rompu ou que vous ayez tapé l’adresse (URL) incorrectement.', 'vergerdefred_2017' ); ?></p>
 
 					<?php
 						get_search_form();

@@ -117,7 +117,11 @@ add_action( 'widgets_init', 'vergerdefred_2017_widgets_init' );
  * Enqueue scripts and styles.
  */
 function vergerdefred_2017_scripts() {
-	wp_enqueue_style( 'vergerdefred_2017-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'vergerdefred_2017-style', get_template_directory_uri() . "/css/vergerdefred_2017.css" );
+
+	wp_enqueue_style( 'vergerdefred_2017-open-sans', "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext" );
+
+	wp_enqueue_style( 'vergerdefred_2017-playfair-display', "https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=latin-ext" );
 
 	wp_enqueue_script( 'vergerdefred_2017-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

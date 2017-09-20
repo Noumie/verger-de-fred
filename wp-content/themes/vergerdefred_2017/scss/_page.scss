@@ -1,0 +1,46 @@
+// Page contact
+.contact-column-left, .contact-column-right{
+	width: 37%;
+	float: left;
+}
+.contact-column-left{
+	.wpcf7{
+		p{
+			margin-bottom: 1rem;
+		}
+	}
+}
+.contact-column-right{ 
+	margin-top: 9%;
+	text-align: center;
+	%title{
+		color: $bleu;
+	}
+}
+
+// Page 404
+.error-404{
+	.image-404 {
+		width: 50%;
+		float: left;
+		padding: 9rem 3rem 5rem;
+	}
+	.texte-404 {
+		width: 50%;
+		float: left;
+		padding: 5rem 0;
+	}
+	.widget{
+		a{
+			color: $bleu;
+			font-size: 2rem;
+			line-height: 2.5rem;
+			font-weight: 400;
+		}
+	}
+}
+
+// Page resultats recherche
+.search .page-content{
+	margin-top: 6rem;
+}
