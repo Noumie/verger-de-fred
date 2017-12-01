@@ -49,7 +49,7 @@
 {
 	@include block();
 	clear: both;
-	@include clearfix();
+	// @include clearfix();
 }
 @mixin auto-block()
 {
@@ -60,7 +60,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	float: none;
-	@include clearfix();
+	// @include clearfix();
 }
 @mixin auto-abs-block()
 {
@@ -90,7 +90,7 @@
 @mixin full-bg()
 {
 	@include no-repeat-bg();
-	@include background-size(cover);
+	background-size: cover;
 }
 @mixin cover-bg()
 {
@@ -99,12 +99,12 @@
 @mixin contain-bg()
 {
 	@include no-repeat-bg();
-	@include background-size(contain);
+	background-size: contain;
 }
 @mixin center-bg()
 {
 	@include no-repeat-bg();
-	@include background-size(auto);
+	background-size: auto;
 }
 @mixin full-fixed-bg()
 {
@@ -160,11 +160,11 @@
 }
 @mixin default-transition()
 {
-	@include single-transition( opacity, 0.5s );
+	 transition: opacity 0.5s;
 }
 @mixin all-transition()
 {
-	@include single-transition( all, 1s );
+	 transition: all 1s;
 }
 @mixin keyframes($name) {
 	@-webkit-keyframes #{$name} {

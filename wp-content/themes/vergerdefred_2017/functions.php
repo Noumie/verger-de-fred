@@ -123,6 +123,10 @@ function vergerdefred_2017_scripts() {
 
 	wp_enqueue_style( 'vergerdefred_2017-playfair-display', "https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=latin-ext" );
 
+	wp_enqueue_script( 'vergerdefred_2017-jquery', 'https://code.jquery.com/jquery-3.2.1.min.js', array(), '3.1.0', true );
+
+	wp_enqueue_script( 'vergerdefred_2017-vergerdefred_2017.js', get_template_directory_uri() . '/js/vergerdefred_2017.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'vergerdefred_2017-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'vergerdefred_2017-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
