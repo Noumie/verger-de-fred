@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<!-- afficher l'image à la une -->
-		<div class='presentation' style='background-image: url(" <?php the_post_thumbnail_url('full'); ?> ")' >
+		<div class='presentation presentation-home' style='background-image: url(" <?php the_post_thumbnail_url('full'); ?> ")' >
 
 			<?php if (is_front_page()) { ?>
 				<div class="overlay">
@@ -41,26 +41,7 @@
 			</div>
 			<img class="separator" src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/feuilles.png" alt="Transition feuilles"/>
 		</div>
-		<div class="full zone-picto">
-			<ul class="block">
-				<li>
-					<img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/picto-1.png" alt="Picto " />
-					<span>Accés handicapés</span>
-				</li>
-				<li>
-					<img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/picto-2.png" alt="Picto " />
-					<span>Petit déjeuner inclus</span>
-				</li>
-				<li>
-					<img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/picto-1.png" alt="Picto " />
-					<span>Test</span>
-				</li>
-				<li>
-					<img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/picto-2.png" alt="Picto " />
-					<span>Test</span>
-				</li>
-			</ul>
-		</div>
+		<div class="full zone-picto"></div>
 		<div class="full zone-texte-2">
 			<div class="wrapper">
 				<div class="part-2">
@@ -75,13 +56,26 @@
 		</div>
 		<div class="full zone-photo">
 			<ul>
-				<li><img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/montage-1.png" alt="Illustration"/></li>
-				<li><img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/montage-1.png" alt="Illustration"/></li>
-				<li><img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/montage-1.png" alt="Illustration"/></li>
-				<li><img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/montage-1.png" alt="Illustration"/></li>
-				<li><img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/montage-1.png" alt="Illustration"/></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
 			</ul>
 		</div>
+	</div>
+	<div class="full zone-contact">
+		<div class="site-info">
+			<div class="lineout">
+				<p class="title">Nous contacter</p>
+				<p>Babineau Frédéric & Cathy</p>
+				<p>Lieu dit SAINT MARTIN<br>
+				17020 SAINT AGNAN<br>
+				06 87 85 86 81<br>
+				levergerdefred@gmail.com</p>
+				<p>Réponse assurée dans  les 48h</p>
+			</div>
+		</div><!-- .site-info -->
 	</div>
 
 </article><!-- #post-## -->

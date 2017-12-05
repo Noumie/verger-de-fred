@@ -1,39 +1,19 @@
 // FOOTER ____________________________________________
 footer{
-	@include block;
-	width: 100%;
-	height: 40rem;
-	background-image:url('./../img/google-map-saint-martin.jpg');
-	text-align: center;
-	.site-info {
-		position: absolute;
-		top: 5.4rem;
-		left: 25%;
-		display: block;
-		padding: 1.2rem;
-		background-color: $bleuFonce;
-		text-align: left;
-		.lineout {
-			padding: 1.2rem 3rem 0.2rem;
-			border: 0.1rem solid white;
-		}
-		.title {
-			color: white;
-			font-size: 3rem;
-			margin-bottom: 1rem;
-		}
-		p {
-			color: white;
-		}
-	}
 	.rights {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
 		padding: 0.7rem;
 		background-color: white;
+		text-align: center;
+		color: $river;
 		a {
 			padding: 0 1rem;
+			color: $river;
+			&:hover {
+				color: $ocean;
+			}
 		}
 	}
 }
