@@ -57,6 +57,9 @@ wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
+wp-content/plugins/*
+!wp-content/plugins/atn/
+!wp-content/plugins/index.php
 
 # ignore these plugins
 wp-content/plugins/hello.php

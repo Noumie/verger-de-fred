@@ -115,7 +115,7 @@ ul#primary-menu{
 	visibility: hidden;
 	z-index: 3;
 	display: none;
-	@include border-radius( 0 );
+	border-radius: 0;
 	&:focus{
 		border: none;
 		outline-width: 0.1rem;
@@ -124,4 +124,8 @@ ul#primary-menu{
 	&:hover{
 		background-color: rgba(0,0,0,0);
 	}
+}
+
+.header-scroll {
+	background-color: rgba(0,0,0,0.5);
 }

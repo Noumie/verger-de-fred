@@ -1,0 +1,25 @@
+{
+  "name": "verger-fred",
+  "version": "1.0.0",
+  "description": "Le verger de Fred",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noumie/verger-fred.git"
+  },
+  "author": "Noumie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noumie/verger-fred/issues"
+  },
+  "homepage": "https://github.com/Noumie/verger-fred#readme",
+  "devDependencies": {
+    "gulp-oyana": "^0.6.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
