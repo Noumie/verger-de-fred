@@ -11,19 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		<!-- afficher l'image à la une -->
+		<div class='presentation' style='background-image: url(" <?php the_post_thumbnail_url('full'); ?> ")' >
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php vergerdefred_2017_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+			<div class="title">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

@@ -14,7 +14,7 @@
 	margin-top: 9%;
 	text-align: center;
 	%title{
-		color: $bleu;
+		color: $river;
 	}
 }
 
@@ -32,7 +32,7 @@
 	}
 	.widget{
 		a{
-			color: $bleu;
+			color: $river;
 			font-size: 2rem;
 			line-height: 2.5rem;
 			font-weight: 400;
@@ -43,4 +43,7 @@
 // Page resultats recherche
 .search .page-content{
 	margin-top: 6rem;
+}
+
+.single-chambre, .page {
 }
