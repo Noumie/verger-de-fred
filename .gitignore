@@ -38,6 +38,8 @@ Thumbs.db
 *.exe
 *.o
 *.so
+*.css
+*.min.js
 
 # ignore packaged files
 *.7z
@@ -54,11 +56,10 @@ Thumbs.db
 # "plugins" directory
 # "themes" directory
 wp-content/*
-!wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
 wp-content/plugins/*
-!wp-content/plugins/atn/
+!wp-content/plugins/vergerdefred/
 !wp-content/plugins/index.php
 
 # ignore these plugins
