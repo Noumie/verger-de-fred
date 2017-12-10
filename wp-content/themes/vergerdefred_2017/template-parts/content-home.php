@@ -73,7 +73,7 @@
 				17020 SAINT AGNAN<br>
 				06 87 85 86 81<br>
 				levergerdefred@gmail.com</p>
-				<p>Réponse assurée dans  les 48h</p>
+				<p>Réponse assurée dans les 48h</p>
 			</div>
 		</div><!-- .site-info -->
 	</div>

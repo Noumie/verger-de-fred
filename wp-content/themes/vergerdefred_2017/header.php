@@ -30,7 +30,7 @@
 				<?php
 				the_custom_logo();
 				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="header-logo" src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/logo-verger-de-fred.png" alt="Logo Le Verger de Fred" /><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="header-logo animated swing" src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/logo-verger-de-fred.png" alt="Logo Le Verger de Fred" /><?php bloginfo( 'name' ); ?></a></h1>
 						<?php else : ?>
 							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="header-logo" src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/logo-verger-de-fred.png" alt="Logo Le Verger de Fred" /></a></p>
 						<?php

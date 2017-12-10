@@ -14,7 +14,7 @@
 		<!-- afficher l'image à la une -->
 		<div class='presentation' style='background-image: url(" <?php the_post_thumbnail_url('full'); ?> ")' >
 
-			<div class="title">
+			<div class="overlay">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
 

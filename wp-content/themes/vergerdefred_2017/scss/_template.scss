@@ -8,34 +8,26 @@ body{
 	margin: 0 0 1.5rem 0;
 	color: $river;
 	line-height: initial;
-}
-h1{
-	color: $river;
-	font-size: 3.4rem;
 	font-weight: 100;
 }
+h1{
+	font-size: 3.4rem;
+}
 h2{
-	color: $stone;
-	font-size: 3.3rem;
-	font-weight: 600;
-	color: $river;
+	font-size: 2.8rem;
 }
 h3{
-	font-size: 2.5rem;
-	font-weight: bold;
-	color: $stone;
+	font-size: 2.4rem;
 }
 h4{
 	font-size: 1.9rem;
-	font-weight: bold;
-	color: $stone;
 }
 p{
 	font-size: $baseFontSize;
 	line-height: 2.1rem;
-	font-weight: 200;
 	color: $stone;
 	margin-bottom: 1.5rem;
+	font-weight: 100;
 }
 
 // Formatage des liens
@@ -53,9 +45,6 @@ select {
 	-moz-appearance: none;
 	appearance: none;
 	cursor: pointer;
-}
-select::-ms-expand {
-	display: none;
 }
 .select-style{
 	position: absolute;
@@ -232,23 +221,20 @@ a.btn-link {
 	padding: 5rem 2rem;
 }
 
+
 article {
 	.entry-content {
 		@include block;
 		max-width: 98rem;
 		width: 100%;
 		margin: 8rem auto;
-		%title + p {
-			font-weight: 600; 
-			font-size: 1.7rem; 
-		}
 	}
 }
 
 .presentation {
 	position: relative;
 	display: block;
-	height: 80vh;
+	height: 55vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -263,7 +249,7 @@ article {
 		font-family: $titleFont;
 		font-size: 6rem;
 		line-height: 5rem;
-		text-shadow: 0.1rem 0.1rem 0.2rem #555;
+		text-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.4);
 		span {
 			display: block;
 			font-size: 5rem;

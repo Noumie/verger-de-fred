@@ -18,6 +18,14 @@
 	.site-content {
 		margin-top: 0;
 	}
+	article {
+		.entry-content {
+			%title + p {
+				font-weight: 600; 
+				font-size: 1.7rem; 
+			}
+		}
+	}
 }
 
 div.entry-content-home{
