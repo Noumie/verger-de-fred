@@ -10,7 +10,7 @@
 	%title {
 		font-size: 8rem;
 		line-height: 7rem;
-		width: auto;
+		width: 60%;
 	}
 }
 
@@ -21,8 +21,8 @@
 	article {
 		.entry-content {
 			%title + p {
-				font-weight: 600; 
-				font-size: 1.7rem; 
+				font-weight: 600;
+				font-size: 1.7rem;
 			}
 		}
 	}
@@ -45,9 +45,10 @@ div.entry-content-home{
 }
 .zone-picto {
 	background-image: url("../img/fond-picto.jpg");
-	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-size: cover;
 	height: 50rem;
 }
 .zone-photo {
@@ -88,6 +89,9 @@ div.entry-content-home{
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	.wrapper {
+		overflow: hidden;
+	}
 	.part-1 {
 		padding-right: 4rem;
 	}
@@ -103,6 +107,9 @@ div.entry-content-home{
 			width: 9rem;
 			background-color: $river;
 		}
+		.btn-link {
+			left: 4rem;
+		}
 	}
 }
 
@@ -111,6 +118,9 @@ div.entry-content-home{
 	background-size: contain;
 	background-position: left top;
 	background-repeat: no-repeat;
+	.wrapper {
+		overflow: hidden;
+	}
 	.part-1 {
 		padding-left: 4rem;
 	}
@@ -129,8 +139,9 @@ div.entry-content-home{
 	}
 }
 .part-1, .part-2 {
-	@include inline-block;
-	width: 49.5%;
+	@include block;
+	width: 50%;
+	float: left;
 	vertical-align: middle;
 }
 
@@ -161,4 +172,9 @@ div.entry-content-home{
 			color: white;
 		}
 	}
+}
+
+.imgSup1 {
+	@include block;
+	height: 10rem;
 }

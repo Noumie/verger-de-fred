@@ -44,14 +44,16 @@
 		<div class="full zone-picto"></div>
 		<div class="full zone-texte-2">
 			<div class="wrapper">
-				<div class="part-2">
-					<?php
-						the_content();
-					?>
-				</div>
-				<div class="part-1">
-					<img src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/montage-1.png" alt="Illustration"/>
-				</div>
+
+				<!-- faire remonter les champs supplémentaires -->
+				<?php
+				if ( class_exists( 'MetaBox' ) )
+				{
+					$meta = new MetaBox();
+					$meta->getChampSupHtml( get_the_ID() );
+				}
+				?>
+
 			</div>
 		</div>
 		<div class="full zone-photo">

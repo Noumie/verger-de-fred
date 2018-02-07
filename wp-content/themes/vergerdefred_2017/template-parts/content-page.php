@@ -40,7 +40,16 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+
+		<!-- faire remonter les champs supplémentaires -->
+		<?php
+		if ( class_exists( 'MetaBox' ) )
+		{
+			$meta = new MetaBox();
+			$meta->getChampSupHtml( get_the_ID() );
+		}
+		?>
+		</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php vergerdefred_2017_entry_footer(); ?>

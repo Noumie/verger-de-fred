@@ -10,28 +10,35 @@ body{
 	line-height: initial;
 	font-weight: 100;
 }
-h1{
+h1 {
 	font-size: 3.4rem;
 }
-h2{
+h2 {
 	font-size: 2.8rem;
 }
-h3{
+h3 {
 	font-size: 2.4rem;
 }
-h4{
+h4 {
 	font-size: 1.9rem;
 }
-p{
+
+ul, ol {
+	margin: 0 1.5rem 0 0;
+}
+ul li , p {
 	font-size: $baseFontSize;
-	line-height: 2.1rem;
+	line-height: 2.2rem;
 	color: $stone;
-	margin-bottom: 1.5rem;
 	font-weight: 100;
 }
 
+p {
+	margin-bottom: 1.5rem;
+}
+
 // Formatage des liens
-a{
+a {
 	color: $river;
 	text-decoration: none;
 	&:visited, &:hover{
@@ -160,23 +167,6 @@ textarea{
 	font-family: $mainFont;
 }
 
-// Formatage des liens
-ul{
-	margin: 0 0 2rem 0;
-	li{
-		list-style: none;
-		font-size: 1.6rem;
-		color: $storm;
-	}
-}
-.entry-content{
-	ul{
-		li{
-			list-style: inside;
-		}
-	}
-}
-
 // Formatage tableaux
 th, td{
 	vertical-align: top;
@@ -190,7 +180,7 @@ th{
 a.btn-link {
 	position: absolute;
 	display: block;
-	right: 0;
+	left: 0;
 	width: auto;
 	padding: 0.8rem 1.6rem;
 	background-color: $ocean;
@@ -254,14 +244,16 @@ article {
 	position: relative;
 	display: block;
 	height: 55vh;
+	min-height: 40rem;
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	%title {
 		position: absolute;
 		bottom: 11rem;
 		left: 50%;
-		width: 31rem;
+		width: 60%;
 		transform: translateX(-50%);
 		text-align: center;
 		color: #ffffff;
