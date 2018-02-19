@@ -27,25 +27,22 @@
 	<header id="masthead" class="site-header">
 		<div class="wrapper">
 			<div class="site-branding">
+				<a class="logo-header" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="logo Le Verger de Fred">
+					<?php include "img/logo_le-verger-de-fred.svg"; ?>
+				</a>
 				<?php
 				the_custom_logo();
-				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="header-logo animated swing" src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/logo-verger-de-fred.png" alt="Logo Le Verger de Fred" /><?php bloginfo( 'name' ); ?></a></h1>
-						<?php else : ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="header-logo" src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/logo-verger-de-fred.png" alt="Logo Le Verger de Fred" /></a></p>
-						<?php
-				endif;
 
 				$description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+					<p class="description-header"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 				<?php
 				endif; ?>
 			</div><!-- .site-branding -->
-			
+
 			<button class="mobil-nav-button"></button>
 			<nav id="site-navigation" class="main-navigation">
-				<?php 
+				<?php
 					  wp_nav_menu( array(
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',

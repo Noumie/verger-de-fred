@@ -57,13 +57,6 @@
 			</div>
 		</div>
 		<div class="full zone-photo">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
 		</div>
 	</div>
 	<div class="full zone-contact">

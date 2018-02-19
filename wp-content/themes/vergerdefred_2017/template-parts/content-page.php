@@ -35,19 +35,16 @@
 				get_the_title()
 			) );
 
+			if ( class_exists( 'MetaBox' ) )
+			{
+				$meta = new MetaBox();
+				$meta->getChampSupHtml( get_the_ID() );
+			}
+
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'vergerdefred_2017' ),
 				'after'  => '</div>',
 			) );
-		?>
-
-		<!-- faire remonter les champs supplémentaires -->
-		<?php
-		if ( class_exists( 'MetaBox' ) )
-		{
-			$meta = new MetaBox();
-			$meta->getChampSupHtml( get_the_ID() );
-		}
 		?>
 		</div><!-- .entry-content -->
 

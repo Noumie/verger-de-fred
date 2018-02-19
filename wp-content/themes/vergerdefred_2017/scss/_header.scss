@@ -25,9 +25,9 @@
 // Logo
 .site-branding{
 	@include inline-block;
+	height: 11rem;
 	width: 100%;
-	height: 100%;
-	max-width: 19rem;
+	max-width: 15rem;
 	margin: 0;
 	margin-top: -1.4rem;
 	padding: 0;
@@ -40,9 +40,15 @@
 	}
 	a{
 		@include block;
-		width: 15rem;
+		height: 11rem;
+		width: 100%;
 	}
 }
+svg {
+	width: auto;
+	height: 100%;
+}
+
 .site-branding:hover
 {
 	animation: swing 1s ease;
@@ -76,27 +82,36 @@ ul#primary-menu{
 	line-height: 3rem;
 	list-style: none;
 	font-family: $titleFont;
-	li{
+	> li{
 		position: relative;
-	}
-	a{
-		height: 100%;
-		margin: 0 1.4rem;
-		font-size: 1.7rem;
-		font-weight: 300;
-		color: $menuItem;
-		font-size: 1.7rem;
-		padding-bottom: 2rem;
-		text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3);
-		&:hover {
-			color: #ADDCE0;
+		 > a{
+			height: 100%;
+			margin: 0 1.4rem;
+			font-size: 1.7rem;
+			font-weight: 300;
+			color: $menuItem;
+			font-size: 1.7rem;
+			padding-bottom: 2rem;
+			text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3);
+			&:hover {
+				&:before {
+					content: "";
+					height: 0.1rem;
+					width: 60%;
+					background-color: white;
+					position: absolute;
+					bottom: 1.4rem;
+					left: 20%;
+				}
+			}
 		}
 	}
 	.sub-menu{
 		@include block;
 		position: absolute;
 		top: 4rem;
-		width: auto;
+		width: 13rem;
+		margin-left: 1.4rem;
 		padding: 0.6rem;
 		background-color: white;
 		border-radius: 0.3rem;
@@ -121,13 +136,12 @@ ul#primary-menu{
 		}
 		a{
 			width: auto;
-			padding: 0.3rem;
+			padding: 0.4rem;
 			color: $ocean;
 			font-size: 1.5rem;
 			font-weight: 400;
 			text-shadow: inherit;
 			&:hover {
-				// color: $river;
 				opacity: 0.6;
 			}
 		}
