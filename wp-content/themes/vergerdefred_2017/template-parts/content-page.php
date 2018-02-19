@@ -14,7 +14,7 @@
 		<!-- afficher l'image à la une -->
 		<div class='presentation' style='background-image: url(" <?php the_post_thumbnail_url('full'); ?> ")' >
 
-			<div class="title">
+			<div class="overlay">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
 
@@ -35,12 +35,18 @@
 				get_the_title()
 			) );
 
+			if ( class_exists( 'MetaBox' ) )
+			{
+				$meta = new MetaBox();
+				$meta->getChampSupHtml( get_the_ID() );
+			}
+
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'vergerdefred_2017' ),
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+		</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php vergerdefred_2017_entry_footer(); ?>

@@ -8,38 +8,41 @@ body{
 	margin: 0 0 1.5rem 0;
 	color: $river;
 	line-height: initial;
-}
-h1{
-	color: $river;
-	font-size: 3.4rem;
 	font-weight: 100;
 }
-h2{
-	color: $stone;
-	font-size: 3.3rem;
-	font-weight: 600;
-	color: $river;
+h1 {
+	font-size: 3.4rem;
+	line-height: 4rem;
 }
-h3{
-	font-size: 2.5rem;
-	font-weight: bold;
-	color: $stone;
+h2 {
+	font-size: 2.8rem;
+	line-height: 3.4rem;
 }
-h4{
+h3 {
+	font-size: 2.4rem;
+	line-height: 3rem;
+}
+h4 {
 	font-size: 1.9rem;
-	font-weight: bold;
-	color: $stone;
+	line-height: 2.5rem;
 }
-p{
+
+ul, ol {
+	margin: 0 1.5rem 0 0;
+}
+ul li , p {
 	font-size: $baseFontSize;
-	line-height: 2.1rem;
-	font-weight: 200;
+	line-height: 2.2rem;
 	color: $stone;
+	font-weight: 100;
+}
+
+p {
 	margin-bottom: 1.5rem;
 }
 
 // Formatage des liens
-a{
+a {
 	color: $river;
 	text-decoration: none;
 	&:visited, &:hover{
@@ -53,9 +56,6 @@ select {
 	-moz-appearance: none;
 	appearance: none;
 	cursor: pointer;
-}
-select::-ms-expand {
-	display: none;
 }
 .select-style{
 	position: absolute;
@@ -171,23 +171,6 @@ textarea{
 	font-family: $mainFont;
 }
 
-// Formatage des liens
-ul{
-	margin: 0 0 2rem 0;
-	li{
-		list-style: none;
-		font-size: 1.6rem;
-		color: $storm;
-	}
-}
-.entry-content{
-	ul{
-		li{
-			list-style: inside;
-		}
-	}
-}
-
 // Formatage tableaux
 th, td{
 	vertical-align: top;
@@ -199,21 +182,40 @@ th{
 }
 
 a.btn-link {
-	@include inline-block;
+	position: absolute;
+	display: block;
+	left: 0;
+	width: auto;
 	padding: 0.8rem 1.6rem;
-	margin-top: 0.5rem;
 	background-color: $ocean;
 	font-family: $titleFont;
 	color: white;
+	transition: all 0.2s ease;
+	&:after {
+		content: "";
+		position: absolute;
+		height: 0.6rem;
+		width: 100%;
+		display: block;
+		background-color: $deepSea;
+		bottom: -0.6rem;
+		left: 0;
+		transition: all 0.2s ease;
+	}
 	&:hover {
 		background-color: rgba($ocean,0.7);
 		color: white;
+		margin-top: 0.5rem;
+		&:after {
+			height: 0.2rem;
+			bottom: -0.2rem;
+		}
 	}
 }
 
 // CONTENT ____________________________________________
 .hentry {
-    margin: 0;
+	margin: 0;
 }
 .site-content{
 	min-height: 90vh;
@@ -232,38 +234,37 @@ a.btn-link {
 	padding: 5rem 2rem;
 }
 
+
 article {
 	.entry-content {
 		@include block;
 		max-width: 98rem;
 		width: 100%;
 		margin: 8rem auto;
-		%title + p {
-			font-weight: 600; 
-			font-size: 1.7rem; 
-		}
 	}
 }
 
 .presentation {
 	position: relative;
 	display: block;
-	height: 80vh;
+	height: 55vh;
+	min-height: 40rem;
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	%title {
 		position: absolute;
-		bottom: 6rem;
+		bottom: 11rem;
 		left: 50%;
-		width: 31rem;
+		width: 60%;
 		transform: translateX(-50%);
 		text-align: center;
 		color: #ffffff;
 		font-family: $titleFont;
 		font-size: 6rem;
 		line-height: 5rem;
-		text-shadow: 0.1rem 0.1rem 0.2rem #555;
+		text-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.4);
 		span {
 			display: block;
 			font-size: 5rem;

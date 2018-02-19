@@ -1,5 +1,7 @@
-// FOOTER ____________________________________________
 footer{
+	@include block;
+	font-size: 1.2rem;
+	line-height: 1.7;
 	.rights {
 		position: absolute;
 		bottom: 0;

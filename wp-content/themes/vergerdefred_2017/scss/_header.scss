@@ -4,6 +4,7 @@
 	height: 9.5rem;
 	width: 100%;
 	text-align: center;
+	transition: all 0.3s ease;
 	.wrapper{
 		position: relative;
 		z-index: 2;
@@ -15,17 +16,23 @@
 	}
 }
 .fixedTop {
-	background-color: rgba($ocean,0.8);
+	background-color: rgba($ocean,0.7);
+	ul#primary-menu a {
+		text-shadow: inherit;
+	}
 }
 
 // Logo
 .site-branding{
 	@include inline-block;
+	height: 11rem;
 	width: 100%;
-	height: 100%;
-	max-width: 19rem;
+	max-width: 15rem;
 	margin: 0;
+	margin-top: -1.4rem;
 	padding: 0;
+	transition: all 0.3s ease;
+	transform-origin:top center;
 	p{
 		margin-top: 0;
 		margin-bottom: 0;
@@ -33,9 +40,28 @@
 	}
 	a{
 		@include block;
-		width: 15rem;
+		height: 11rem;
+		width: 100%;
 	}
 }
+svg {
+	width: auto;
+	height: 100%;
+}
+
+.site-branding:hover
+{
+	animation: swing 1s ease;
+}
+
+@keyframes swing{
+	20% { transform: rotateZ(-5deg); }
+	40% { transform: rotateZ(5deg); }
+	60% { transform: rotateZ(-5deg); }
+	80% { transform: rotateZ(5deg); }
+	to { transform:rotate(0deg) }
+}
+
 // Menu
 .main-navigation{
 	@include inline-block;
@@ -56,49 +82,67 @@ ul#primary-menu{
 	line-height: 3rem;
 	list-style: none;
 	font-family: $titleFont;
-	li{
+	> li{
 		position: relative;
-	}
-	a{
-		height: 100%;
-		font-size: 1.7rem;
-		margin: 0 1.4rem;
-		color: $menuItem;
-		font-size: 1.7rem;
-		font-weight: 300;
-		&:hover {
-			border-bottom: 0.1rem solid #fff;
+		 > a{
+			height: 100%;
+			margin: 0 1.4rem;
+			font-size: 1.7rem;
+			font-weight: 300;
+			color: $menuItem;
+			font-size: 1.7rem;
+			padding-bottom: 2rem;
+			text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3);
+			&:hover {
+				&:before {
+					content: "";
+					height: 0.1rem;
+					width: 60%;
+					background-color: white;
+					position: absolute;
+					bottom: 1.4rem;
+					left: 20%;
+				}
+			}
 		}
 	}
 	.sub-menu{
 		@include block;
 		position: absolute;
-		top: 0.6rem;
-		width: auto;
-		padding-top: 1.6rem;
-		border-left: 0.1rem solid white;
+		top: 4rem;
+		width: 13rem;
+		margin-left: 1.4rem;
+		padding: 0.6rem;
+		background-color: white;
+		border-radius: 0.3rem;
+		text-align: center;
+		box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.12);
 		&:before{
-			content: url(../img/before-menu.png?1484745866);
+			content: "";
+			display: block;
 			position: absolute;
-			top: -5.8rem;
-			left: 3rem;
-			z-index: 1;
+			top: -0.6rem;
+			left: 50%;
+			width: 1.2rem;
+			height: 1.2rem;
+			margin: 0 0 0 -0.6rem;
+			border-radius: 4px 0 0 0;
+			background: #fff;
+			box-shadow: -3px -3px 5px rgba(82,95,127,0.04);
+			transform: rotateZ(45deg);
 		}
 		li{
-			width: auto;
-			border-bottom: 0.1rem solid #dedede;
+			width: 100%;
 		}
 		a{
 			width: auto;
-			padding: 0.6rem 2rem;
-			color : white;
+			padding: 0.4rem;
+			color: $ocean;
 			font-size: 1.5rem;
 			font-weight: 400;
-		}
-		li:hover{
-			a{
-				border-bottom: none;
-				color: $silver;
+			text-shadow: inherit;
+			&:hover {
+				opacity: 0.6;
 			}
 		}
 	}
