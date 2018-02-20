@@ -41,7 +41,7 @@
 			</div>
 			<img class="separator" src="<?php echo get_site_url(); ?>/wp-content/themes/vergerdefred_2017/img/feuilles.png" alt="Transition feuilles"/>
 		</div>
-		<div class="full zone-picto"></div>
+		<div class="full bandeau-image"></div>
 		<div class="full zone-texte-2">
 			<div class="wrapper">
 
@@ -56,21 +56,22 @@
 
 			</div>
 		</div>
-		<div class="full zone-photo">
+		<div class="full zone-home-bottom">
+			<div class="zone-photo">
+			</div>
+			<div class="zone-contact">
+				<div class="lineout">
+					<p class="title">Nous contacter</p>
+					<p>Babineau Frédéric & Cathy</p>
+					<p>Lieu dit SAINT MARTIN<br>
+					17020 SAINT AGNAN<br>
+					06 87 85 86 81<br>
+					levergerdefred@gmail.com</p>
+					<p>Réponse assurée dans les 48h</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="full zone-contact">
-		<div class="site-info">
-			<div class="lineout">
-				<p class="title">Nous contacter</p>
-				<p>Babineau Frédéric & Cathy</p>
-				<p>Lieu dit SAINT MARTIN<br>
-				17020 SAINT AGNAN<br>
-				06 87 85 86 81<br>
-				levergerdefred@gmail.com</p>
-				<p>Réponse assurée dans les 48h</p>
-			</div>
-		</div><!-- .site-info -->
-	</div>
+
 
 </article><!-- #post-## -->
