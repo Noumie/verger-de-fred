@@ -43,19 +43,14 @@ div.entry-content-home{
 	right: 0;
 	z-index: 4;
 }
-.zone-picto, .zone-photo {
+.bandeau-image {
 	height: 50rem;
 	padding: 0;
+	background-image: url("../img/fond-picto.jpg");
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.zone-picto {
-	background-image: url("../img/fond-picto.jpg");
-}
-.zone-photo {
-	background-image: url("../img/fond-photos.jpg");
 }
 
 .zone-texte {
@@ -118,37 +113,35 @@ div.entry-content-home{
 	vertical-align: middle;
 }
 
-.zone-contact {
-	@include block;
-	width: 100%;
-	height: 40rem;
-	background-image:url('./../img/google-map-saint-martin.jpg');
-	border-top: 1rem solid $ocean;
-	text-align: center;
-	&:before {
-		content: "";
-		display: block;
-		position: absolute;
-		left: 14%;
-		top: -7.5rem;
-		height: 7.2rem;
-		width: 23.4rem;
-		background-image: url(../img/silhouette-chiens.png);
+.zone-home-bottom {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 0;
+
+	.zone-photo {
+		width: 50%;
+		height: 50rem;
+		float: left;
+		padding: 0;
+		background-image: url("../img/fond-photos.jpg");
+		background-position: center center;
 		background-repeat: no-repeat;
-		background-position: 0 0;
-		background-size: contain;
+		background-size: cover;
 	}
-	.site-info {
-		position: absolute;
-		top: 5rem;
-		left: 25%;
-		display: block;
-		padding: 1.2rem;
+	.zone-contact {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		height: auto;
+		float: left;
 		background-color: $ocean;
-		text-align: left;
+		text-align: center;
 		.lineout {
 			padding: 1.2rem 3rem 0.2rem;
 			border: 0.1rem solid white;
+			width: 44%;
+			margin: auto;
 		}
 		.title {
 			color: white;
