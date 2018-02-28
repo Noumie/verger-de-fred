@@ -47,20 +47,16 @@
 }
 @mixin break-block()
 {
-	@include block();
-	clear: both;
-	// @include clearfix();
+	@include clearfix();
 }
 @mixin auto-block()
 {
 	@include block();
-	clear: both;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	float: none;
-	// @include clearfix();
 }
 @mixin auto-abs-block()
 {
@@ -212,17 +208,23 @@
 		height: 100%;
 	}
 }
-
-// CSS de l'image à la une en fnd sur les pages
-@mixin thumbnail{
-	@extend .auto-block;
-	width: 100vw;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size:cover;
-	background-size:cover;
-	background-position: 50% 50%;
-	z-index:5;
+@mixin clearfix()
+{
+	clear: both;
+	content: "";
+	display: table;
+}
+#main:after{
+	display: none;
+	visibility: hidden;
+	color: green;
+	position: absolute;
+	bottom: 0rem;
+	left: 0rem;
+	right: 0rem;
+	margin: auto;
+	font-size: 2rem;
+	width: 30rem;
+	font-family: "dashicons";
+	content: "Made with 🦄 by \40Golgarud\00a0";
 }
