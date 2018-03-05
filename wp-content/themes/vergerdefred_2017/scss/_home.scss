@@ -1,5 +1,12 @@
 .presentation-home {
 	height: 80vh;
+	.overlay {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.4);
+	}
 	%title {
 		font-size: 8rem;
 		line-height: 7rem;
@@ -78,7 +85,7 @@ div.entry-content-home{
 .zone-texte-2 {
 	background-image: url("../img/branche-feuilles.png");
 	background-size: contain;
-	background-position: right top;
+	background-position: left top;
 	background-repeat: no-repeat;
 	.wrapper {
 		overflow: hidden;
@@ -108,7 +115,7 @@ div.entry-content-home{
 
 .zone-home-bottom {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	padding: 0;
 
 	.zone-photo {
@@ -133,7 +140,7 @@ div.entry-content-home{
 		.lineout {
 			padding: 1.2rem 3rem 0.2rem;
 			border: 0.1rem solid white;
-			width: 44%;
+			width: 36rem;
 			margin: auto;
 		}
 		.title {

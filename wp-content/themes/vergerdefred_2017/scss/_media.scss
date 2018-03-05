@@ -5,32 +5,11 @@
 
 @media(max-width: 1280px)
 {
-	.site-header {
-		height: 7.5rem;
-	}
-	.site-branding {
-		height: auto;
-		width: 12rem;
-	}
-	.main-navigation {
-		margin-top: 2.8rem;
-	}
 	.presentation %title {
-		font-size: 4rem;
-		line-height: normal;
-	}
-	.home .presentation %title {
-		font-size: 5rem;
+		font-size: 7rem;
 		span {
 			font-size: 4rem;
 		}
-	}
-	article .entry-content {
-		margin: 6rem auto;
-	}
-	.separator {
-		width: 16rem;
-		bottom: -5rem;
 	}
 }
 
@@ -41,7 +20,76 @@
 
 @media(max-width: 1024px)
 {
+	.site-header {
+		height: 7.5rem;
+	}
+	.site-branding {
+		max-width: 12rem;
+	}
+	.main-navigation {
+		margin-top: 2.6rem;
+		margin-right: 6rem;
+	}
+	ul#primary-menu > li > a {
+		margin: 0 1.1rem;
+		font-size: 1.6rem;
+	}
+	.hamburger {
+		visibility: visible;
+	}
 
+	.presentation-home {
+		height: 50rem;
+	}
+	.presentation %title {
+		font-size: 5rem;
+		span {
+			font-size: 3.2rem;
+			line-height: 3.2rem;
+		}
+	}
+	.separator {
+		width: 17rem;
+	}
+
+	.full {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+		line-height: 3.1rem;
+	}
+	.zone-texte {
+		.part-2 .btn-link {
+			bottom: -2rem;
+		}
+		p {
+			font-size: 1.5rem;
+			line-height: 2.1rem;
+		}
+	}
+	.zone-texte .part-1 {
+		width: 45%;
+	}
+	.zone-texte .part-2 {
+		width: 55%;
+	}
+	.zone-texte-2 .part-1 {
+		width: 45%;
+	}
+	.zone-texte-2 .part-2 {
+		width: 55%;
+	}
+
+	.zone-home-bottom {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	footer::before {
+		left: 13%;
+	}
 }
 
 @media(max-width: 900px)

@@ -41,7 +41,7 @@
 			</div><!-- .site-branding -->
 
 			<button class="mobil-nav-button"></button>
-			<nav id="site-navigation" class="main-navigation">
+			<nav class="main-navigation">
 				<?php
 					  wp_nav_menu( array(
 						'theme_location' => 'menu-1',
@@ -49,6 +49,11 @@
 					  ) );
 				?>
 			</nav><!-- #site-navigation -->
+			<button class="hamburger hamburger--collapse" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button><!-- menu mobile -->
 		</div>
 	</header><!-- #masthead -->
 
