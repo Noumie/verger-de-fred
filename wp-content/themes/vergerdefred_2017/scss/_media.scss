@@ -48,16 +48,47 @@
 			line-height: 3.2rem;
 		}
 	}
+	.separator {
+		width: 17rem;
+	}
 
 	.full {
-		padding: 7rem 2rem;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
 	}
 	h2 {
 		font-size: 2.5rem;
 		line-height: 3.1rem;
 	}
-	.zone-texte .part-2 .btn-link {
-		bottom: -2rem;
+	.zone-texte {
+		.part-2 .btn-link {
+			bottom: -2rem;
+		}
+		p {
+			font-size: 1.5rem;
+			line-height: 2.1rem;
+		}
+	}
+	.zone-texte .part-1 {
+		width: 45%;
+	}
+	.zone-texte .part-2 {
+		width: 55%;
+	}
+	.zone-texte-2 .part-1 {
+		width: 45%;
+	}
+	.zone-texte-2 .part-2 {
+		width: 55%;
+	}
+
+	.zone-home-bottom {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	footer::before {
+		left: 13%;
 	}
 }
 

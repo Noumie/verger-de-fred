@@ -31,7 +31,7 @@
 	  $(".hamburger").toggleClass("is-active");
 	});
 	// ajouter fleche sous-menu
-	$(".menu-mobile li.menu-item-has-children").prepend("<div class='sub-menu-btn'><i class=\"fa fa-chevron-right\"></i></div>");
+	$(".menu-mobile li.menu-item-has-children").prepend("<div class='sub-menu-btn'><i class=\"custom-font-angle-down\"></i></div>");
 	$("li.menu-item-has-children .sub-menu-btn").on("click", function(e) {
 	  var toggleBtn = $(this).parent();
 	  if ( toggleBtn.hasClass("openSubMenu") )

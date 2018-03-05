@@ -271,3 +271,50 @@ article {
 		}
 	}
 }
+
+
+@font-face {
+  font-family: 'custom-font';
+  src:  url('../font/custom-font/custom-font.eot?dgkhhx');
+  src:  url('../font/custom-font/custom-font.eot?dgkhhx#iefix') format('embedded-opentype'),
+	url('../font/custom-font/custom-font.ttf?dgkhhx') format('truetype'),
+	url('../font/custom-font/custom-font.woff?dgkhhx') format('woff'),
+	url('../font/custom-font/custom-font.svg?dgkhhx#custom-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'custom-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-font-facebook-square:before {
+  content: "\f082";
+}
+.custom-font-phone:before {
+  content: "\f095";
+}
+.custom-font-angle-left:before {
+  content: "\f104";
+}
+.custom-font-angle-right:before {
+  content: "\f105";
+}
+.custom-font-angle-up:before {
+  content: "\f106";
+}
+.custom-font-angle-down:before {
+  content: "\f107";
+}
+

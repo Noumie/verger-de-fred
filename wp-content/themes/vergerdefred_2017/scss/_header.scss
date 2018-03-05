@@ -70,76 +70,77 @@ svg {
 	.menu-menu-1-container{
 		height: 100%;
 	}
-}
-// Base générale menu
-ul#primary-menu{
-	@include block;
-	height: 100%;
-	width: 100%;
-	line-height: 3rem;
-	list-style: none;
-	font-family: $titleFont;
-	> li{
-		position: relative;
-		 > a{
-			height: 100%;
-			margin: 0 1.4rem;
-			font-size: 1.7rem;
-			font-weight: 300;
-			color: $menuItem;
-			font-size: 1.7rem;
-			padding-bottom: 2rem;
-			text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3);
-			&:hover {
-				&:before {
-					content: "";
-					height: 0.1rem;
-					width: 60%;
-					background-color: white;
-					position: absolute;
-					bottom: 1.4rem;
-					left: 20%;
+
+	// Base générale menu
+	ul#primary-menu{
+		@include block;
+		height: 100%;
+		width: 100%;
+		line-height: 3rem;
+		list-style: none;
+		font-family: $titleFont;
+		> li{
+			position: relative;
+			 > a{
+				height: 100%;
+				margin: 0 1.4rem;
+				font-size: 1.7rem;
+				font-weight: 300;
+				color: $menuItem;
+				font-size: 1.7rem;
+				padding-bottom: 2rem;
+				text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3);
+				&:hover {
+					&:before {
+						content: "";
+						height: 0.1rem;
+						width: 60%;
+						background-color: white;
+						position: absolute;
+						bottom: 1.4rem;
+						left: 20%;
+					}
 				}
 			}
 		}
-	}
-	.sub-menu{
-		@include block;
-		position: absolute;
-		top: 4rem;
-		width: 13rem;
-		margin-left: 1.4rem;
-		padding: 0.6rem;
-		background-color: white;
-		border-radius: 0.3rem;
-		text-align: center;
-		box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.12);
-		&:before{
-			content: "";
-			display: block;
+		.sub-menu{
+			@include block;
 			position: absolute;
-			top: -0.6rem;
-			left: 50%;
-			width: 1.2rem;
-			height: 1.2rem;
-			margin: 0 0 0 -0.6rem;
-			border-radius: 4px 0 0 0;
-			background: #fff;
-			box-shadow: -3px -3px 5px rgba(82,95,127,0.04);
-			transform: rotateZ(45deg);
-		}
-		li{
-			width: 100%;
-		}
-		a{
-			width: auto;
-			padding: 0.4rem;
-			color: $ocean;
-			font-size: 1.5rem;
-			font-weight: 400;
-			text-shadow: inherit;
-			&:hover {
-				opacity: 0.6;
+			top: 4rem;
+			width: 13rem;
+			margin-left: 1.4rem;
+			padding: 0.6rem;
+			background-color: white;
+			border-radius: 0.3rem;
+			text-align: center;
+			box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.12);
+			&:before{
+				content: "";
+				display: block;
+				position: absolute;
+				top: -0.6rem;
+				left: 50%;
+				width: 1.2rem;
+				height: 1.2rem;
+				margin: 0 0 0 -0.6rem;
+				border-radius: 4px 0 0 0;
+				background: #fff;
+				box-shadow: -3px -3px 5px rgba(82,95,127,0.04);
+				transform: rotateZ(45deg);
+			}
+			li{
+				width: 100%;
+			}
+			a{
+				width: auto;
+				padding: 0.4rem;
+				color: $ocean;
+				font-size: 1.5rem;
+				font-weight: 400;
+				text-shadow: inherit;
+				&:hover {
+					opacity: 0.6;
+				}
 			}
 		}
 	}
@@ -217,29 +218,21 @@ ul#primary-menu{
 	}
 }
 
-
-
-.logo-menu {
-	@include block;
-	padding: 2rem 0 3rem;
-	text-align: center;
-	svg {
-		height: 6rem;
-		width: auto;
-		* {
-			fill: white;
-		}
-	}
+.menu-mobile-logo {
+	width: 13rem;
+	display: block;
+	margin: 0 auto 3rem;
 }
+
 .phone-menu {
+	bottom: 10;
+	display: block;
 	background-color: white;
 	text-align: center;
 	width: 100%;
-	display: block;
-	margin-top: 6.5rem;
 	color: $ocean;
 	padding: 0.9rem;
-	position: sticky;
+	position: fixed;
 	bottom: 0;
 }
 
@@ -281,7 +274,7 @@ ul#primary-menu{
 			display: block;
 			padding: 0.6rem 2rem;
 			font-size: 1.2rem;
-			color: $silver;
+			color: white;
 			transition: color 0.3s, background-color 0.3s;
 		}
 		li {
@@ -311,7 +304,8 @@ ul#primary-menu{
 			transition: transform 0.3s;
 			cursor: pointer;
 			i {
-				margin-top: 1rem;
+				@include block;
+				margin-top: 0.5rem;
 				margin-left: 1.2rem;
 				font-size: 1.2rem;
 				height: 1rem;
