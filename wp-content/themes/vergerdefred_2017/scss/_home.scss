@@ -1,5 +1,9 @@
+.home .site-header {
+	background-color: inherit;
+}
+
 .presentation-home {
-	height: 80vh;
+	height: 68rem;
 	.overlay {
 		position: relative;
 		display: block;
@@ -8,9 +12,13 @@
 		background-color: rgba(0,0,0,0.4);
 	}
 	%title {
-		font-size: 8rem;
-		line-height: 7rem;
+		font-size: 7rem;
+		line-height: 6rem;
 		width: 60%;
+		box-shadow: inherit;
+		background: transparent;
+		padding: inherit;
+		text-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.5);
 	}
 }
 
@@ -59,10 +67,19 @@ div.entry-content-home{
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+
 	.wrapper {
+		display: flex;
 		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 	.part-1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		padding-right: 4rem;
 	}
 	.part-2 {
@@ -89,8 +106,18 @@ div.entry-content-home{
 	background-repeat: no-repeat;
 	.wrapper {
 		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.gabarit {
+		display: flex;
 	}
 	.part-1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		padding-left: 4rem;
 	}
 	.part-2 {
@@ -138,7 +165,7 @@ div.entry-content-home{
 		background-color: $ocean;
 		text-align: center;
 		.lineout {
-			padding: 1.2rem 3rem 0.2rem;
+			padding: 1.7rem 3rem 0.7rem;
 			border: 0.1rem solid white;
 			width: 36rem;
 			margin: auto;

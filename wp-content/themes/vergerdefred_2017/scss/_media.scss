@@ -1,21 +1,34 @@
 @media(max-width: 1500px)
 {
-
+	.zone-texte-2 {
+		background-position: -13% 100%;
+	}
 }
 
 @media(max-width: 1280px)
 {
+	.presentation-home {
+		height: 60rem;
+	}
 	.presentation %title {
+		font-size: 3.5rem;
+	}
+	.presentation-home %title {
 		font-size: 7rem;
 		span {
 			font-size: 4rem;
 		}
 	}
+	.zone-texte-2 {
+		background-position: -30% 100%;
+	}
 }
 
-@media(max-width: 1200px)
+@media(max-width: 1025px)
 {
-
+	.zone-texte-2 {
+		background-position: -39% 100%;
+	}
 }
 
 @media(max-width: 1024px)
@@ -25,10 +38,10 @@
 	}
 	.site-branding {
 		max-width: 12rem;
+		left: 2rem;
 	}
 	.main-navigation {
-		margin-top: 2.6rem;
-		margin-right: 6rem;
+		display: none;
 	}
 	ul#primary-menu > li > a {
 		margin: 0 1.1rem;
@@ -52,10 +65,10 @@
 		width: 17rem;
 	}
 
-	.full {
-		padding-top: 6rem;
-		padding-bottom: 6rem;
-	}
+	// .full {
+	// 	padding-top: 6rem;
+	// 	padding-bottom: 6rem;
+	// }
 	h2 {
 		font-size: 2.5rem;
 		line-height: 3.1rem;
@@ -92,9 +105,88 @@
 	}
 }
 
-@media(max-width: 900px)
+@media(max-width: 1023px)
 {
+	.full {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	.zone-texte {
+		background-image: inherit;
+		text-align: center;
 
+		.wrapper {
+			flex-direction: column-reverse;
+			padding: 5rem 0;
+		}
+		.part-2 {
+			width: 100%;
+			padding-left: 0;
+
+			&:before,
+			&:after {
+				top: -2rem;
+				left: calc(50% - 4.5rem);
+			}
+			a.btn-link {
+				left: calc(50% - 6.5rem);
+			}
+		}
+		.part-1 {
+			width: 100%;
+			margin-top: 10rem;
+		}
+	}
+	.zone-texte-2 {
+		background-image: inherit;
+		text-align: center;
+		.wrapper {
+			padding: 5rem 0;
+		}
+		.gabarit {
+			flex-direction: column;
+		}
+		.part-1 {
+			width: 100%;
+			padding-left: 0;
+			margin-top: 13rem;
+		}
+		.part-2 {
+			width: 100%;
+
+			&:before,
+			&:after {
+				top: -2rem;
+				left: calc(50% - 4.5rem);
+			}
+			a.btn-link {
+				left: calc(50% - 6.5rem);
+			}
+		}
+	}
+	.zone-home-bottom {
+		padding-top: 0;
+		padding-bottom: 0;
+		flex-direction: column;
+		.zone-contact, .zone-photo {
+			width: 100%;
+		}
+		.zone-contact {
+			padding: 6rem 0 9rem;
+		}
+		.zone-photo {
+			height: 40rem;
+		}
+	}
+	.bandeau-image {
+		height: 40rem;
+	}
+	footer::before {
+		left: 37%;
+		top: -6rem;
+		height: 7.2rem;
+		width: 21.4rem;
+	}
 }
 
 @media(max-width: 800px)
