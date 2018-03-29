@@ -29,12 +29,11 @@
 		<?php
 			  wp_nav_menu( array(
 				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'menu_id'        => 'secondary-menu',
 			  ) );
 		?>
 	</nav><!-- #site-navigation -->
-	<a class="phone-menu" href="&#x74;&#x65;&#108;&#x3a;&#43;&#51;&#51;&#x36;&#x30;&#56;&#54;&#x31;&#48;&#57;&#56;&#54;" title="Contactez-nous">
-		<i class="fa fa-phone"></i> &#x20;&#116;&#x65;&#108;&#x3a;&#43;&#x33;&#x33;&#x36;&#56;&#55;&#x38;&#x35;&#x38;&#x36;&#x38;&#x31;
+	<a class="phone-menu" href="&#x74;&#x65;&#108;&#x3a;&#43;&#51;&#51;&#x36;&#x30;&#56;&#54;&#x31;&#48;&#57;&#56;&#54;" title="Contactez-nous">Téléphone: &#48;&#54;&#32;&#56;&#55;&#32;&#x38;&#53;&#32;&#56;&#54;&#x20;&#56;&#x31;&#32;
 	</a>
 </div>
 
