@@ -247,6 +247,12 @@ article {
 	}
 }
 
+.ipad {
+	.presentation, .presentation-home, .bandeau-image {
+		background-attachment: inherit;
+	}
+}
+
 .presentation {
 	position: relative;
 	display: block;
@@ -266,13 +272,17 @@ article {
 		color: #ffffff;
 		font-family: $titleFont;
 		color: white;
-		font-size: 4rem;
+		font-size: 5.5rem;
 		line-height: 5rem;
 		text-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.2);
 		span {
 			display: block;
 			font-size: 5rem;
 		}
+	}
+	.overlay {
+		height: 100%;
+		background-color: rgba(0,0,0,0.35);
 	}
 }
 
